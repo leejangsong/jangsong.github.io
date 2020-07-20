@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자</title>
+    <style>
+        #hmbtn{
+            width: 200px;
+            height: 60px;
+            position: fixed;
+            font-size: 20px;
+            top: 50px;
+            left: 10%;
+            background-color: red;
+        }
+        body{
+            background-image: url('images/와이모토 동굴 반딧불.jpg');
+            background-position: 100%;
+            text-align: center;
+        }
+        h1{
+            margin-top: 15%;
+            font-size: 200px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <script>
+        function hm(){
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="뒤로가기" onclick="hm();" id="hmbtn">
+    <h1></h1>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <script>
+        function hm(){
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <div id="a3">
+    <div class="tile">
+        <h1>이 장 송</h1>
+        <!-- p>lorem -->
+        <p class="transition-text">
+            나라 :대한민국 <br>
+            지역 :서울특별시<br>
+            키:170 <br>
+            나이 :23 <br>
+            몸무게 :56<br>
+            혈액형 :A형<br>
+            성별 :남자<br>
+            현상황: kh정보교귝원 자바배우는중<br>
+            그외엔 생략 <br>
+        </p>
+        <input type="button" value="뒤로가기" onclick="hm();" id="hmbtn">
+    </div>
+      <style>
+        body{
+            background-color: whitesmoke;
+        }
+        #hmbtn{
+            width: 100px;
+            height: 40px;
+        }
+        #hmbtn:hover{
+            background-color: aquamarine;
+        }
+        #a3{
+            text-align: center;
+        }
+      .tile:hover {
+        width:900px;
+        height: 500px;
+        text-align: center;
+        opacity: 1;
+        /* height: 350px; */
+        margin: 10px;
+        padding: 30px;
+        display: inline-block;
+        /* background-color: #99aeff; */
+        background-image: url('images/타우포 호수.jpg');
+        color: white;
+        /* 가로offset 세로offset blur(번짐) spread(그림자크기) color */
+        box-shadow: 0px 35px 77px -17px rgba(0,0,0,.4);
+        transition-duration: 1s;
+        overflow: hidden;/* 요소 밖의 부분을 감춤 */
+      }
+      .tile:hover {
+        box-shadow: 0px 35px 77px -17px rgba(0,0,0,.6);
+      }
+      .tile h1 {
+          color: black;
+      }
+      .tile:hover h1 {
+        opacity: 1;
+      }
+      .tile p {
+        transform: translate(0, 2000px);
+        transition-duration: .4s;
+        color: greenyellow;
+      }
+      .transition-text {
+        opacity: .4;
+      }
+      .tile:hover .transition-text {
+        transform: translate(0,0);
+        opacity: .9;
+      }
+    </style>
+</body>
+</html>

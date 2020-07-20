@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴질 랜드</title>
+    <style type="text/css">
+        #hmbtn{
+            width: 100px;
+            height: 40px;
+            position: fixed;
+            top: 50px;
+            left: 10%;
+        }
+        #hmbtn:hover{
+            background-color: aquamarine;
+        }
+        body{
+            width:90%;
+            height:80%;
+            margin:0 auto;
+            background: rgb(156, 240, 199); /* 배경색*/
+            text-align:center;
+            padding:10px;
+        }
+        div#gallery ul li{
+            position:relative;
+            list-style:none;
+            float:left;
+            margin:0 10px 10px 0;
+        }
+        div#gallery ul li img.small{
+            width:220px;
+            height:150px;
+            z-index:100;
+            cursor:pointer;
+        }
+        p{
+            color: black;
+        }
+        h1{
+            color: darkred;
+        }
+        h2{
+            font-family : "홍길 홍길동체", 휴먼모음t, 궁서체;
+            font-size: 50px;
+            text-shadow : 0px 0px 3px #ccc,
+                  -2px 5px 4px #9f3,
+                  2px 10px 10px #9d3,
+                  -2px 15px 15px #980,
+                  2px 19px 22px #920;
+        }
+        div#gallery ul li .a1{
+        position:absolute;
+        top:220px;
+        left:-80px;
+        width:350px;
+        height:330px;
+        padding-top: 20px;
+        text-align:center;
+        color:white;
+        opacity:0;
+        background:rgba(27, 62, 235, 0.177);
+        }
+        div#gallery li:hover .a1{
+        opacity:1;
+        transform: translateY(-50px);
+        }
+       </style>
+     </head>
+     <body>
+        <input type="button" value="뒤로가기" onclick="hm();" id="hmbtn">
+      <h2>뉴질 랜드 여행지</h2>
+      <hr/>
+      <div id="gallery">
+          <ul>
+              <li>
+                  <img src="images/뉴질랜드 바다.jpg" class="small" > 
+
+                  <div class="a1">
+                    <h1>뉴질랜드 북섬</h1>
+                    <p>절벽으로 이루어진 해안선과 서핑하기 좋은 파도,
+                         깨끗한 해변은 뉴질랜드 자랑인데요~ 
+                    뉴질랜드 북섬에 가신다면 바다를 즐기셔야 합니다.
+                    오클랜드 서쪽의 피하비치는 검은 모래와사자바위가 유명하고,
+                    코로만델 반도의 커시드럴 코브는 아치형 동굴로신비한 풍경이 특징입니다. </p>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/지열지대.jpg" class="small" > 
+
+                  <div class="a1">
+                    <h1>지열지대</h1>
+                    <p>와이오타푸 서멀 원더랜드 - 와이오타푸는
+                        형형색색의 간헐천을 볼 수 있는 곳으로 예술가의 파레트,
+                        샴페인 풀, 데빌스 배스, 데빌스 잉크팟 등이 유명
+                        테푸이아 - 로토루아에서 가장 크고 유명한 지열 지대로
+                        높이 20~30m까지 수증기가 솟아오르는 포후투가 유명
+                        지옥의 문 - 끓는 수영장과 진흙, 유황 온천들을 경험할 수 있는 곳</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/와이모토 동굴 반딧불.jpg" class="small" > 
+
+                  <div class="a1">
+                    <h1>와이모토 동굴 반딧불</h1>
+                    <p>와이토모 동굴은 반딧불이가 서식하고 있는 자연
+                        동굴로 천정에 자리 잡은 반딧불이가 마치 은하수
+                        처럼 펼쳐져 있어 환상적인 경험을 할 수 있는 곳인데요.
+                        보트를 타고 아름다운 반딧불이를 감상할 수 있습니다.</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/와이너리.jpg" class="small" > 
+
+                  <div class="a1">
+                    <h1>와이너리</h1>
+                    <p>뉴질랜드는 호주와 함께 신세계 와인 생산국 중 하나죠.
+                     90년대 이후로는 뉴질랜드의 와인 산업도 빠르게
+                    발전하면서 뉴질랜드 전역에 와이너리가 많은데요.
+                     포도밭의 아름다운 풍경을 즐기며 와인을 시음해 보셔도 좋습니다.
+                    </p>
+                  </div>
+              </li>
+              <li>
+                  <img src="images/호비튼 투어.jpg" class="small" >
+
+                  <div class="a1">
+                    <h1>호비튼 투어</h1>
+                    <p>판타지를 좋아하세요? 신과 요정, 인간과 오크가 모두 <br>
+                    모여 산다는 '중간계'. 들어보신 적 있으시죠? <br>
+                    그곳이 바로 뉴질랜드에 있는데요. 영화 ‘반지의 제왕’의<br>
+                     배경이 되었던 호빗마을 호비튼은 뉴질랜드 북섬여행에 <br>
+                    빼놓을 수 없겠죠~?  호비튼 영화 세트장에 들러 44개의 호빗굴과,<br>
+                     빌보 배긴스의 집 앞 등을 관람해보세요!
+                    </p>
+                  </div>
+              </li>
+              <li>
+              </li>
+          </ul>
+      </div>
+      <script>
+        function hm(){
+            window.history.back();
+        }
+    </script>
+    </body>
+</html>
