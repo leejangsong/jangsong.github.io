@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>landing page</title>
+  <style type="text/css">
+	h1{
+		text-align: center;
+		font-size: 80px;
+	}
+	* {
+      background-color: rgb(16, 0, 81);
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .wrapper {
+      width: 75%;
+      margin: 30px auto 0;
+      overflow: hidden;
+    }
+
+    .item-wrapper {
+      float: left;
+      width: 20%;
+      height: 200px;
+      margin: 2px;
+      margin-right: 55px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .item {
+      height: 100%;
+      width: 100%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all .5s;
+       background-image: url(images/bic.jpg);
+    }
+
+	.one {
+	margin-left: 15px;
+	}
+	.four {
+	margin-right: 15px;
+	}
+
+    .image-btn {
+      display: block;
+      width: 100px;
+      height: 30px;
+      background-color: aqua;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      text-decoration: none;
+      border-radius: 10px;
+      border: 1px solid aqua;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .4s linear;
+    }
+
+    .image-btn:hover {
+		width: 200px;
+		font-size: 35px;
+		height: 36px;
+		text-align: center;
+      color: yellow;
+      background-color: blue;
+
+    }
+
+    .item-wrapper:hover .item,
+    .item-wrapper:focus .item {
+      transform: scale(1.1);
+    }
+    .item:hover,
+    .item:focus {
+       filter: blur(2px);
+    }
+    .item-wrapper:hover .image-btn,
+    .item-wrapper:focus .image-btn {
+      opacity: 1;
+    }
+    .background {
+      height: 60px;
+    }
+    h1 {
+      text-align: center;
+     margin-top: 25px;
+      font-size: 60px;
+      color: rgb(8, 0, 255);
+    }
+    span:hover {
+      color: #3C7D1B;
+      font-size: 32px;
+    }
+
+	.border {
+	margin-top: 30px;
+	}
+
+  </style>
+ </head>
+ <body>
+	<h1>landing page</h1>
+	<div class ="border">
+		<div class="background"></div>
+	  </div>
+		<div class="wrapper">
+		  <div class="item-wrapper one">
+			<div class="item">
+			</div>
+				<a class="image-btn fancybox" href="자기소개.html">자기소개</a>
+		  </div>
+		  <div class="item-wrapper two">
+			<div class="item">
+	  
+			</div>
+			<a class="image-btn fancybox" href="여행.html">여행</a>
+		</div>
+		  <div class="item-wrapper three">
+			<div class="item">
+			</div>
+					<a class="image-btn fancybox" href="개발자.html">개발자</a>
+		  </div>
+		  <div class="item-wrapper four">
+			<div class="item">      </div>
+					<a class="image-btn fancybox" href="회원가입.html">회원가입</a>
+		  </div>
+		</div>
+		  <div class ="border">
+		<div class="background"></div>
+		</div>
+</body>
+</html>
